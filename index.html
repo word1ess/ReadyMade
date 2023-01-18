@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230118201226">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230118201226"/>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Главная</title>
 </head>
 
@@ -291,12 +291,133 @@
         </div>
     </div>
 </header>
+<div class="search block-with-shadow">
+    <div class="block-close" id="close">
+        <img src="img/svgicons/close.svg" alt="">
+    </div>
+    <h3 class="search__title">Выберите ваш регион</h3>
+    <input class="search__input input" type="search" name="search" id="searchRegion" placeholder="Найти регион">
+    <div class="search__row">
+        <div class="search__items">
+            <div class="search__item item-search">
+                <p class="item-search__title">A</p>
+                <p class="item-search__region">Алтайский край</p>
+                <p class="item-search__region">Амурская область</p>
+                <p class="item-search__region">Астраханская область</p>
+            </div>
+            <div class="search__item item-search">
+                <p class="item-search__title">A</p>
+                <p class="item-search__region">Алтайский край</p>
+                <p class="item-search__region">Амурская область</p>
+                <p class="item-search__region">Астраханская область</p>
+            </div>
+            <div class="search__item item-search">
+                <p class="item-search__title">A</p>
+                <p class="item-search__region">Алтайский край</p>
+                <p class="item-search__region">Амурская область</p>
+                <p class="item-search__region">Астраханская область</p>
+            </div>
+            <div class="search__item item-search">
+                <p class="item-search__title">A</p>
+                <p class="item-search__region">Алтайский край</p>
+                <p class="item-search__region">Амурская область</p>
+                <p class="item-search__region">Астраханская область</p>
+            </div>
+        </div>
+        <div class="search__items">
+            <div class="search__item item-search">
+                <p class="item-search__title">A</p>
+                <p class="item-search__region">Алтайский край</p>
+                <p class="item-search__region">Амурская область</p>
+                <p class="item-search__region">Астраханская область</p>
+            </div>
+            <div class="search__item item-search">
+                <p class="item-search__title">A</p>
+                <p class="item-search__region active">Алтайский край</p>
+                <p class="item-search__region">Амурская область</p>
+                <p class="item-search__region">Астраханская область</p>
+            </div>
+            <div class="search__item item-search">
+                <p class="item-search__title">A</p>
+                <p class="item-search__region">Алтайский край</p>
+                <p class="item-search__region">Амурская область</p>
+                <p class="item-search__region">Астраханская область</p>
+            </div>
+            <div class="search__item item-search">
+                <p class="item-search__title">A</p>
+                <p class="item-search__region">Алтайский край</p>
+                <p class="item-search__region">Амурская область</p>
+                <p class="item-search__region">Астраханская область</p>
+            </div>
+            <div class="search__item item-search">
+                <p class="item-search__title">A</p>
+                <p class="item-search__region">Алтайский край</p>
+                <p class="item-search__region">Амурская область</p>
+                <p class="item-search__region">Астраханская область</p>
+            </div>
+            <div class="search__item item-search">
+                <p class="item-search__title">A</p>
+                <p class="item-search__region">Алтайский край</p>
+                <p class="item-search__region">Амурская область</p>
+                <p class="item-search__region">Астраханская область</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="sign-in block-with-shadow">
+    <div class="block-close" id="close">
+        <img src="img/svgicons/close.svg" alt="">
+    </div>
+    <h3 class="sign-in__title">Вход в личный кабинет</h3>
+    <div class="sign-in__row">
+        <form action="#">
+            <input type="email" class="sign-in__input input" placeholder="example@mail.ru">
+            <input type="password" class="sign-in__input input" placeholder="Пароль">
+            <button type="submit" class="sign-in__btn btn">Войти</button>
+        </form>
+        <div class="sign-in__links">
+            <a class="sign-in__link" href="#">Забыли пароль?</a>
+            <a class="sign-in__link" href="#">Регистрация</a>
+        </div>
+    </div>
+</div>
+<div class="callback block-with-shadow">
+    <div class="block-close" id="close">
+        <img src="img/svgicons/close.svg" alt="">
+    </div>
+    <h2>Форма заказа</h2>
+    <form action="#" class="callback__form">
+        <input class="callback__input" type="text" placeholder="Ф.И.О. Контактного лица*" required>
+        <input class="callback__input" type="text" placeholder="Emаil*" required>
+        <input class="callback__input" type="tel" placeholder="Телефон*" required>
+        <textarea placeholder="Примечание"></textarea>
+        <label class="file">
+            <input class="custom-file" name="file" type="file">
+            Прикрепить файл
+            <img src="img/svgicons/clip.svg" alt="clip">
+        </label>
+        <p class="callback__tip">* поля обязательны для заполнения</p>
+        <button class="btn callback__send">Отправить</button>
+    </form>
+</div>
+<div class="thanks-ordering block-with-shadow">
+    <div class="block-close" id="close">
+        <img src="img/svgicons/close.svg" alt="">
+    </div>
+    <div class="thanks-ordering__row">
+        <h3>Спасибо за ваш заказ!</h3>
+        <p class="thanks-ordering__strong">Счет на оплату и договор придут на <span class="text-colored">указанный email</span> в ближайшее время.</p>
+        <p class="thanks-ordering__normal">По всем вопросам можете обращаться по тел <span class="text-colored">8(800)-550-49-08</span> или в форму обратной связи</p>
+        <button class="btn thanks-ordering__close">Ок</button>
+    </div>
+</div>
         <main class="content">
             <section class="intro">
                 <div class="intro__row">
                     <div class="intro__service block-with-shadow">
                         <div class="intro__img">
-                            <picture><source srcset="img/index/intro/intro.webp" type="image/webp"><img src="img/index/intro/intro.webp" alt="intro"></picture>
+                            <img src="img/index/intro/intro.webp" alt="intro">
                         </div>
                         <div class="intro__content">
                             <h1 class="intro__title">Сервис «Готовые курсы»</h1>
@@ -423,23 +544,23 @@
                     <h2 class="clients-who__title title">Кто является нашим клиентом?</h2>
                     <div class="clients-who__items">
                         <div class="clients-who__item">
-                            <picture><source srcset="img/index/clients-who/1.webp" type="image/webp"><img src="img/index/clients-who/1.webp" alt=""></picture>
+                            <img src="img/index/clients-who/1.webp" alt="">
                             <p>Образовательные организации ДПО</p>
                         </div>
                         <div class="clients-who__item">
-                            <picture><source srcset="img/index/clients-who/2.webp" type="image/webp"><img src="img/index/clients-who/2.webp" alt=""></picture>
+                            <img src="img/index/clients-who/2.webp" alt="">
                             <p>Организации, оказывающие услуги в области охраны труда</p>
                         </div>
                         <div class="clients-who__item">
-                            <picture><source srcset="img/index/clients-who/3.webp" type="image/webp"><img src="img/index/clients-who/3.webp" alt=""></picture>
+                            <img src="img/index/clients-who/3.webp" alt="">
                             <p>Организации, оказывающие услуги в сфере пожарной безопасности</p>
                         </div>
                         <div class="clients-who__item">
-                            <picture><source srcset="img/index/clients-who/4.webp" type="image/webp"><img src="img/index/clients-who/4.webp" alt=""></picture>
+                            <img src="img/index/clients-who/4.webp" alt="">
                             <p>Корпоративные учебные центры</p>
                         </div>
                         <div class="clients-who__item">
-                            <picture><source srcset="img/index/clients-who/5.webp" type="image/webp"><img src="img/index/clients-who/5.webp" alt=""></picture>
+                            <img src="img/index/clients-who/5.webp" alt="">
                             <p>ВУЗы и школы</p>
                         </div>
                     </div>
@@ -454,7 +575,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/1.webp" type="image/webp"><img src="img/index/education/1.webp" alt=""></picture>
+                                    <img src="img/index/education/1.webp" alt="">
                                 </div>
                                 <h3>Пожарно-технический<br />минимум</h3>
                                 <p>
@@ -466,7 +587,7 @@
                         <a href="oxrana-truda.html">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/2.webp" type="image/webp"><img src="img/index/education/2.webp" alt=""></picture>
+                                    <img src="img/index/education/2.webp" alt="">
                                 </div>
                                 <h3>Охрана труда</h3>
                                 <p>
@@ -478,7 +599,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/3.webp" type="image/webp"><img src="img/index/education/3.webp" alt=""></picture>
+                                    <img src="img/index/education/3.webp" alt="">
                                 </div>
                                 <h3>Безопасность дорожного<br />движения (БДД)</h3>
                                 <p>
@@ -490,7 +611,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/4.webp" type="image/webp"><img src="img/index/education/4.webp" alt=""></picture>
+                                    <img src="img/index/education/4.webp" alt="">
                                 </div>
                                 <h3>Гражданская оборона и защита<br />от чрезвычайных ситуаций</h3>
                                 <p>
@@ -502,7 +623,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/5.webp" type="image/webp"><img src="img/index/education/5.webp" alt=""></picture>
+                                    <img src="img/index/education/5.webp" alt="">
                                 </div>
                                 <h3>Антитеррористическая<br />защищенность</h3>
                                 <p>
@@ -514,7 +635,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/6.webp" type="image/webp"><img src="img/index/education/6.webp" alt=""></picture>
+                                    <img src="img/index/education/6.webp" alt="">
                                 </div>
                                 <h3>Тепловые<br />энергоустановки (ТЭУ)</h3>
                                 <p>
@@ -526,7 +647,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/7.webp" type="image/webp"><img src="img/index/education/7.webp" alt=""></picture>
+                                    <img src="img/index/education/7.webp" alt="">
                                 </div>
                                 <h3>Обеспечение<br />доступной среды</h3>
                                 <p>
@@ -538,7 +659,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/8.webp" type="image/webp"><img src="img/index/education/8.webp" alt=""></picture>
+                                    <img src="img/index/education/8.webp" alt="">
                                 </div>
                                 <h3>Противодействие<br />коррупции</h3>
                                 <p>
@@ -551,7 +672,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/9.webp" type="image/webp"><img src="img/index/education/9.webp" alt=""></picture>
+                                    <img src="img/index/education/9.webp" alt="">
                                 </div>
                                 <h3>Экологическая<br />безопасность</h3>
                                 <p>
@@ -563,7 +684,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/10.webp" type="image/webp"><img src="img/index/education/10.webp" alt=""></picture>
+                                    <img src="img/index/education/10.webp" alt="">
                                 </div>
                                 <h3>Пожарная<br />безопасность</h3>
                                 <p>
@@ -575,7 +696,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/11.webp" type="image/webp"><img src="img/index/education/11.webp" alt=""></picture>
+                                    <img src="img/index/education/11.webp" alt="">
                                 </div>
                                 <h3>Электробезопасность</h3>
                                 <p>
@@ -587,7 +708,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/12.webp" type="image/webp"><img src="img/index/education/12.webp" alt=""></picture>
+                                    <img src="img/index/education/12.webp" alt="">
                                 </div>
                                 <h3>Радиационная<br />безопасность</h3>
                                 <p>
@@ -599,7 +720,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/13.webp" type="image/webp"><img src="img/index/education/13.webp" alt=""></picture>
+                                    <img src="img/index/education/13.webp" alt="">
                                 </div>
                                 <h3>Транспортная<br />безопасность</h3>
                                 <p>
@@ -612,7 +733,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/14.webp" type="image/webp"><img src="img/index/education/14.webp" alt=""></picture>
+                                    <img src="img/index/education/14.webp" alt="">
                                 </div>
                                 <h3>Промышленная<br />безопасность</h3>
                                 <p>
@@ -624,7 +745,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/15.webp" type="image/webp"><img src="img/index/education/15.webp" alt=""></picture>
+                                    <img src="img/index/education/15.webp" alt="">
                                 </div>
                                 <h3>Обучение в сфере<br />закупок</h3>
                                 <p>
@@ -636,7 +757,7 @@
                         <a href="#">
                             <article class="education__item">
                                 <div class="education__img">
-                                    <picture><source srcset="img/index/education/16.webp" type="image/webp"><img src="img/index/education/16.webp" alt=""></picture>
+                                    <img src="img/index/education/16.webp" alt="">
                                 </div>
                                 <h3>Обучение в сфере<br />туризма</h3>
                                 <p>
@@ -664,7 +785,7 @@
                     <div class="set__items">
                         <div class="set__item item-set block-with-shadow">
                             <div class="item-set__img">
-                                <picture><source srcset="img/index/set/1.webp" type="image/webp"><img src="img/index/set/1.webp" alt=""></picture>
+                                <img src="img/index/set/1.webp" alt="">
                             </div>
                             <div class="item-set__content">
                                 <h3>Программа обучения в редактируемом формате .docx</h3>
@@ -678,7 +799,7 @@
                         </div>
                         <div class="set__item item-set block-with-shadow">
                             <div class="item-set__img">
-                                <picture><source srcset="img/index/set/2.webp" type="image/webp"><img src="img/index/set/2.webp" alt=""></picture>
+                                <img src="img/index/set/2.webp" alt="">
                             </div>
                             <div class="item-set__content">
                                 <h3>Комплект лекций</h3>
@@ -687,7 +808,7 @@
                         </div>
                         <div class="set__item item-set block-with-shadow">
                             <div class="item-set__img">
-                                <picture><source srcset="img/index/set/3.webp" type="image/webp"><img src="img/index/set/3.webp" alt=""></picture>
+                                <img src="img/index/set/3.webp" alt="">
                             </div>
                             <div class="item-set__content">
                                 <h3>Комплект презентаций</h3>
@@ -696,7 +817,7 @@
                         </div>
                         <div class="set__item item-set block-with-shadow">
                             <div class="item-set__img">
-                                <picture><source srcset="img/index/set/4.webp" type="image/webp"><img src="img/index/set/4.webp" alt=""></picture>
+                                <img src="img/index/set/4.webp" alt="">
                             </div>
                             <div class="item-set__content">
                                 <h3>Контрольно-измерительные материалы (тесты)</h3>
@@ -722,7 +843,7 @@
                             </ul>
                         </div>
                         <div class="info-set__img">
-                            <picture><source srcset="img/index/set/5.webp" type="image/webp"><img src="img/index/set/5.webp" alt=""></picture>
+                            <img src="img/index/set/5.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -733,44 +854,44 @@
                     <div class="clients-now__items">
                         <div class="clients-now__item">
                             <div class="clients-now__img">
-                                <picture><source srcset="img/index/clients-now/1.webp" type="image/webp"><img src="img/index/clients-now/1.webp" alt=""></picture>
+                                <img src="img/index/clients-now/1.webp" alt="">
                             </div>
                             <p>ЧОУ ДПО «УЦ «Академия Безопасности»</p>
                         </div>
                         <div class="clients-now__item">
                             <div class="clients-now__img">
-                                <picture><source srcset="img/index/clients-now/2.webp" type="image/webp"><img src="img/index/clients-now/2.webp" alt=""></picture>
+                                <img src="img/index/clients-now/2.webp" alt="">
                             </div>
                             <p>АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ "КОРПОРАТИВНАЯ СЕТЕВАЯ АКАДЕМИЯ" (Академия
                                 Ростеха)</p>
                         </div>
                         <div class="clients-now__item">
                             <div class="clients-now__img">
-                                <picture><source srcset="img/index/clients-now/3.webp" type="image/webp"><img src="img/index/clients-now/3.webp" alt=""></picture>
+                                <img src="img/index/clients-now/3.webp" alt="">
                             </div>
                             <p>АНО «Пожобразование»</p>
                         </div>
                         <div class="clients-now__item">
                             <div class="clients-now__img">
-                                <picture><source srcset="img/index/clients-now/4.webp" type="image/webp"><img src="img/index/clients-now/4.webp" alt=""></picture>
+                                <img src="img/index/clients-now/4.webp" alt="">
                             </div>
                             <p>ЧОУ ДПО «УКЦ «Пожарная безопасность»</p>
                         </div>
                         <div class="clients-now__item">
                             <div class="clients-now__img">
-                                <picture><source srcset="img/index/clients-now/5.webp" type="image/webp"><img src="img/index/clients-now/5.webp" alt=""></picture>
+                                <img src="img/index/clients-now/5.webp" alt="">
                             </div>
                             <p>ООО "Моцарт"</p>
                         </div>
                         <div class="clients-now__item">
                             <div class="clients-now__img">
-                                <picture><source srcset="img/index/clients-now/6.webp" type="image/webp"><img src="img/index/clients-now/6.webp" alt=""></picture>
+                                <img src="img/index/clients-now/6.webp" alt="">
                             </div>
                             <p>ООО «Академия Дистанционного Образования»</p>
                         </div>
                         <div class="clients-now__item">
                             <div class="clients-now__img">
-                                <picture><source srcset="img/index/clients-now/7.webp" type="image/webp"><img src="img/index/clients-now/7.webp" alt=""></picture>
+                                <img src="img/index/clients-now/7.webp" alt="">
                             </div>
                             <p>АНО ДПО «Центр Профессионального Обучения»</p>
                         </div>
@@ -782,40 +903,40 @@
                 <div class="slider-reviews__container swiper-container">
                     <div class="slider-reviews__wrapper swiper-wrapper">
                         <div class="slider-reviews__slide swiper-slide ">
-                            <picture><source srcset="img/index/reviews/1.webp" type="image/webp"><img src="img/index/reviews/1.png" alt=""></picture>
+                            <img src="img/index/reviews/1.png" alt="">
                         </div>
                         <div class="slider-reviews__slide swiper-slide">
-                            <picture><source srcset="img/index/reviews/1.webp" type="image/webp"><img src="img/index/reviews/1.png" alt=""></picture>
+                            <img src="img/index/reviews/1.png" alt="">
                         </div>
                         <div class="slider-reviews__slide swiper-slide">
-                            <picture><source srcset="img/index/reviews/1.webp" type="image/webp"><img src="img/index/reviews/1.png" alt=""></picture>
+                            <img src="img/index/reviews/1.png" alt="">
                         </div>
                         <div class="slider-reviews__slide swiper-slide">
-                            <picture><source srcset="img/index/reviews/1.webp" type="image/webp"><img src="img/index/reviews/1.png" alt=""></picture>
+                            <img src="img/index/reviews/1.png" alt="">
                         </div>
                         <div class="slider-reviews__slide swiper-slide">
-                            <picture><source srcset="img/index/reviews/1.webp" type="image/webp"><img src="img/index/reviews/1.png" alt=""></picture>
+                            <img src="img/index/reviews/1.png" alt="">
                         </div>
                         <div class="slider-reviews__slide swiper-slide">
-                            <picture><source srcset="img/index/reviews/1.webp" type="image/webp"><img src="img/index/reviews/1.png" alt=""></picture>
+                            <img src="img/index/reviews/1.png" alt="">
                         </div>
                         <div class="slider-reviews__slide swiper-slide">
-                            <picture><source srcset="img/index/reviews/1.webp" type="image/webp"><img src="img/index/reviews/1.png" alt=""></picture>
+                            <img src="img/index/reviews/1.png" alt="">
                         </div>
                         <div class="slider-reviews__slide swiper-slide">
-                            <picture><source srcset="img/index/reviews/1.webp" type="image/webp"><img src="img/index/reviews/1.png" alt=""></picture>
+                            <img src="img/index/reviews/1.png" alt="">
                         </div>
                         <div class="slider-reviews__slide swiper-slide">
-                            <picture><source srcset="img/index/reviews/1.webp" type="image/webp"><img src="img/index/reviews/1.png" alt=""></picture>
+                            <img src="img/index/reviews/1.png" alt="">
                         </div>
                         <div class="slider-reviews__slide swiper-slide">
-                            <picture><source srcset="img/index/reviews/1.webp" type="image/webp"><img src="img/index/reviews/1.png" alt=""></picture>
+                            <img src="img/index/reviews/1.png" alt="">
                         </div>
                         <div class="slider-reviews__slide swiper-slide">
-                            <picture><source srcset="img/index/reviews/1.webp" type="image/webp"><img src="img/index/reviews/1.png" alt=""></picture>
+                            <img src="img/index/reviews/1.png" alt="">
                         </div>
                         <div class="slider-reviews__slide swiper-slide">
-                            <picture><source srcset="img/index/reviews/1.webp" type="image/webp"><img src="img/index/reviews/1.png" alt=""></picture>
+                            <img src="img/index/reviews/1.png" alt="">
                         </div>
                     </div>
                     <div class="swiper-button-prev"></div>
@@ -971,98 +1092,7 @@
                     п. 4 статьи 1259 ГК РФ.
                 </div>
                 <div class="deponing__img">
-                    <picture><source srcset="img/index/deponing/1.webp" type="image/webp"><img src="img/index/deponing/1.webp" alt=""></picture>
-                </div>
-            </div>
-        </div>
-        <div class="search block-with-shadow">
-            <div class="block-close" id="close">
-                <img src="img/svgicons/close.svg" alt="">
-            </div>
-            <h3 class="search__title">Выберите ваш регион</h3>
-            <input class="search__input input" type="search" name="search" id="searchRegion" placeholder="Найти регион">
-            <div class="search__row">
-                <div class="search__items">
-                    <div class="search__item item-search">
-                        <p class="item-search__title">A</p>
-                        <p class="item-search__region">Алтайский край</p>
-                        <p class="item-search__region">Амурская область</p>
-                        <p class="item-search__region">Астраханская область</p>
-                    </div>
-                    <div class="search__item item-search">
-                        <p class="item-search__title">A</p>
-                        <p class="item-search__region">Алтайский край</p>
-                        <p class="item-search__region">Амурская область</p>
-                        <p class="item-search__region">Астраханская область</p>
-                    </div>
-                    <div class="search__item item-search">
-                        <p class="item-search__title">A</p>
-                        <p class="item-search__region">Алтайский край</p>
-                        <p class="item-search__region">Амурская область</p>
-                        <p class="item-search__region">Астраханская область</p>
-                    </div>
-                    <div class="search__item item-search">
-                        <p class="item-search__title">A</p>
-                        <p class="item-search__region">Алтайский край</p>
-                        <p class="item-search__region">Амурская область</p>
-                        <p class="item-search__region">Астраханская область</p>
-                    </div>
-                </div>
-                <div class="search__items">
-                    <div class="search__item item-search">
-                        <p class="item-search__title">A</p>
-                        <p class="item-search__region">Алтайский край</p>
-                        <p class="item-search__region">Амурская область</p>
-                        <p class="item-search__region">Астраханская область</p>
-                    </div>
-                    <div class="search__item item-search">
-                        <p class="item-search__title">A</p>
-                        <p class="item-search__region active">Алтайский край</p>
-                        <p class="item-search__region">Амурская область</p>
-                        <p class="item-search__region">Астраханская область</p>
-                    </div>
-                    <div class="search__item item-search">
-                        <p class="item-search__title">A</p>
-                        <p class="item-search__region">Алтайский край</p>
-                        <p class="item-search__region">Амурская область</p>
-                        <p class="item-search__region">Астраханская область</p>
-                    </div>
-                    <div class="search__item item-search">
-                        <p class="item-search__title">A</p>
-                        <p class="item-search__region">Алтайский край</p>
-                        <p class="item-search__region">Амурская область</p>
-                        <p class="item-search__region">Астраханская область</p>
-                    </div>
-                    <div class="search__item item-search">
-                        <p class="item-search__title">A</p>
-                        <p class="item-search__region">Алтайский край</p>
-                        <p class="item-search__region">Амурская область</p>
-                        <p class="item-search__region">Астраханская область</p>
-                    </div>
-                    <div class="search__item item-search">
-                        <p class="item-search__title">A</p>
-                        <p class="item-search__region">Алтайский край</p>
-                        <p class="item-search__region">Амурская область</p>
-                        <p class="item-search__region">Астраханская область</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="sign-in block-with-shadow">
-            <div class="block-close" id="close">
-                <img src="img/svgicons/close.svg" alt="">
-            </div>
-            <h3 class="sign-in__title">Вход в личный кабинет</h3>
-            <div class="sign-in__row">
-                <form action="#">
-                    <input type="email" class="sign-in__input input" placeholder="example@mail.ru">
-                    <input type="password" class="sign-in__input input" placeholder="Пароль">
-                    <button type="submit" class="sign-in__btn btn">Войти</button>
-                </form>
-                <div class="sign-in__links">
-                    <a class="sign-in__link" href="#">Забыли пароль?</a>
-                    <a class="sign-in__link" href="#">Регистрация</a>
+                    <img src="img/index/deponing/1.webp" alt="">
                 </div>
             </div>
         </div>
@@ -1152,10 +1182,10 @@
 </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230118201226"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230118201226"></script>
-    <script src="https://kit.fontawesome.com/cdd40c5823.js?_v=20230118201226" crossorigin="anonymous"></script>
-    <script src="js/app.min.js?_v=20230118201226"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/cdd40c5823.js" crossorigin="anonymous"></script>
+    <script src="js/app.min.js"></script>
 </body>
 
 </html>
