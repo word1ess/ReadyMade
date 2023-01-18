@@ -1,0 +1,819 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230118201226">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230118201226"/>
+    <title>Главная</title>
+</head>
+
+<body>
+    <svg display="none">
+        <symbol id="link" viewBox="0 0 20 20" fill="none">
+            <g>
+                <path
+                    d="M8.20533 5C4.44395 5.19142 3.33337 6.61876 3.33337 10.8218C3.33337 15.3678 4.63256 16.6667 9.17972 16.6667C13.3625 16.6667 14.797 15.5676 15 12.1207"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10.8334 9.16683L16.6667 3.3335" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M11.6666 3.3335H16.6666V8.3335" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </g>
+        </symbol>
+    </svg>
+    <svg display="none">
+        <symbol id="download" viewBox="0 0 20 20" fill="none">
+            <g>
+                <path
+                    d="M16.6666 11.6666C16.6666 16.25 15.8333 16.6666 9.99998 16.6666C4.16665 16.6666 3.33331 16.25 3.33331 11.6666"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 3.33331L10 12.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6.66663 9.16663L9.99996 12.5L13.3333 9.16662" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </g>
+        </symbol>
+    </svg>
+    <div class="wrapper">
+        <svg display="none">
+    <symbol id="location" viewBox="0 0 24 24" fill="none">
+        <g>
+            <path d="M12 17C13.5 17 18 13.5 18 8.66667C18 5 15.5 2 12 2C8.5 2 6 5 6 8.66667C6 13.5 10.5 17 12 17Z"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M12 8.5C12.2761 8.5 12.5 8.27614 12.5 8C12.5 7.72386 12.2761 7.5 12 7.5C11.7239 7.5 11.5 7.72386 11.5 8C11.5 8.27614 11.7239 8.5 12 8.5Z"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M5.5 18C4.56453 18.4135 4 18.9363 4 19.4592C4 20.899 7.6 22 12 22C16.4 22 20 20.899 20 19.4592C20 18.9363 19.4355 18.4135 18.5 18"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="wallet" viewBox="0 0 24 24" fill="none">
+        <g>
+            <path d="M21 12C21 18.5 19 20 12 20C4.5 20 3 18 3 12C3 5.5 5 4 12 4C19 4 21 5.5 21 12Z" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M20.5 16C18.5 16 15.5 16 15.5 12.5C15.5 9 18.5 9 20.5 9" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <circle cx="18.5" cy="12.5" r="0.5" />
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="papper" viewBox="0 0 24 24" fill="none">
+        <g>
+            <path d="M20 12C20 18 19.1111 21 12 21C4.88889 21 4 18 4 12C4 6 5 3 12 3C19 3 20 6 20 12Z"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M9 4C9 4 9.60457 6.39543 8.5 7.5C7.39543 8.60457 5 8 5 8" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M8 16H12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M8 13H16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="mail" viewBox="0 0 24 24" fill="none">
+        <g>
+            <path
+                d="M14.6 19.6C13.8 19.9 12.9 20 12 20C7.6 20 4 16.4 4 12C4 7.6 7.6 4 12 4C16.4 4 20 7.6 20 12C20 12.3 20 12.5 20 12.8M16.2 9.3C15.1 12.5 14.4 14.1 15.5 15.2C16.7 16.4 19.2 16.2 19.9 12.9M13.0539 8.33156C14.7871 9.05394 15.4859 11.3338 14.6148 13.4238C13.7437 15.5139 11.6326 16.6225 9.89937 15.9002C8.16619 15.1778 7.46734 12.8979 8.33844 10.8079C9.20954 8.71787 11.3207 7.60918 13.0539 8.33156Z"
+                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="call" viewBox="0 0 24 24" fill="none">
+        <g>
+            <path
+                d="M15.5187 20.8312C8.99707 18.6339 5.50186 14.6437 3.27588 9.01866C2.7194 7.89365 2.71938 5.08115 6.05833 3.28114C6.89306 2.83114 7.7278 2.83113 8.84079 3.95615C9.95377 5.08116 8.84078 3.95614 9.95377 5.08114C11.2338 6.375 11.0976 7.5 10.875 8.0625C10.6524 8.7375 9.61987 9.35616 9.95377 10.7062C10.2877 12.0562 11.9571 13.8562 13.2927 14.0812C14.6283 14.3062 15.381 13.4625 15.9375 13.125C16.494 12.7875 17.4142 12.6222 18.3011 13.5187C18.75 13.9724 18.8576 14.0812 19.9706 15.2062C21.0836 16.3312 21.2094 17.2442 20.7497 18.0187C19.3125 20.9404 16.8946 21.2948 15.5187 20.8312Z"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="cart" viewBox="0 0 24 24" fill="none">
+        <g>
+            <path d="M10.0265 5.85055C14.5414 5.85055 11.5528 5.85055 15.5751 5.85055C19.5973 5.85055 20.6993 5.85055 19.5973 11.3244C18.48 16.8741 17.3827 17.3097 13.5639 16.8741C7.45837 16.1775 7.84206 15.9843 6.52502 10.2145C4.8782 3 5.96972 3 2 3"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.5 21C8.77614 21 9 20.7761 9 20.5C9 20.2239 8.77614 20 8.5 20C8.22386 20 8 20.2239 8 20.5C8 20.7761 8.22386 21 8.5 21Z"   stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16.5 21C16.7761 21 17 20.7761 17 20.5C17 20.2239 16.7761 20 16.5 20C16.2239 20 16 20.2239 16 20.5C16 20.7761 16.2239 21 16.5 21Z"   stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="profile" viewBox="0 0 24 24" fill="none">
+        <g>
+            <path d="M19 18.5C19 20.0294 16 21 12 21C8 21 5 20.0294 5 18.5C5 16.2692 8.5 15 12 15C15.5 15 19 16.5 19 18.5Z"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 12C14.4853 12 16.5 9.98528 16.5 7.5C16.5 5.01472 14.4853 3 12 3C9.51472 3 7.5 5.01472 7.5 7.5C7.5 9.98528 9.51472 12 12 12Z"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="time" viewBox="0 0 24 24" fill="none">
+        <g>
+            <circle cx="12" cy="12" r="9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M11.5 8L11.5 12.5L15.5 14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+    </symbol>
+</svg>
+<header class="header header__pc">
+    <div class="container">
+        <div class="header-top">
+            <div class="header-top__row">
+                <div class="header-top__geo">
+                    <button class="header-top__button button-header">
+                        <div class="button-header__img">
+                            <svg width="24" height="24">
+                                <use xlink:href="#location"></use>
+                            </svg>
+                        </div>
+                        <p class="button-header__text searchingBtn">Ивановская область</p>
+                    </button>
+                </div>
+                <nav class="header-top__nav nav-header">
+                    <ul class="nav-header__list">
+                        <a href="#">
+                            <li class="nav-header__item header__link">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#wallet"></use>
+                                </svg>
+                                <p>Способы оплаты</p>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="nav-header__item header__link">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#papper"></use>
+                                </svg>
+                                <p>Контакты и реквизиты</p>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="nav-header__item header__link">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                                <p>info@curs-sale.ru</p>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="nav-header__item header__link">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#call"></use>
+                                </svg>
+                                <p>8 (800) 550-49-08</p>
+                            </li>
+                        </a>
+                        <button>
+                            <li class="nav-header__item header__link timeBtn">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#time"></use>
+                                </svg>
+                                <p class="underline">Режим работы</p>
+                                <div class="timeBlock block-with-shadow"> 
+                                    пн-пт: 06:00 - 21:00
+                                    <br />
+                                    (выходные с 08:00-20:00)
+                                </div>
+                            </li>
+                        </button>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom__row">
+                <div class="header-bottom__logo">
+                    <img width="114px" height="34.41px" src="img/svgicons/logo.svg" alt="logo">
+                </div>
+                <div class="header-bottom__catalog">
+                    <span>
+
+                    </span>
+                    Каталог
+                </div>
+                <div class="header-bottom__form">
+                    <form action="#">
+                        <img src="img/svgicons/search.svg" alt="search">
+                        <input type="search" placeholder="Что ищем?">
+                        <button>Найти</button>
+                    </form>
+                </div>
+                <div class="header-bottom__links">
+                    <a href="cart.html" class="header__link">
+                        <svg width="24" height="24">
+                            <use xlink:href="#cart"></use>
+                        </svg>
+                        <p>Корзина</p>
+                    </a>
+                    <button id="profile" href="profile.html" class="header__link profile">
+                        <svg width="24" height="24">
+                            <use xlink:href="#profile"></use>
+                        </svg>
+                        <p>Личный кабинет</p>
+                    </button>
+                </div>
+                <div class="header-bottom__callback btn">
+                    Заказать обратный звонок
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<header class="header header__mobile">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__logo">
+                <a href="./index.html">
+                    <img width = "114px" height = "34.41px" src="img/svgicons/logo.svg" class="header__logo-img" alt="header-logo">
+                </a>
+            </div>
+            <form action="#" class="header__search">
+                <img src="img/svgicons/search.svg" alt="search">
+                <input type="search" placeholder="Поиск по сайту">
+            </form>
+            <div class="header__burger">
+                <span>
+
+                </span>
+            </div>
+            <nav class="header__menu">
+                <div class="nav-header__list">
+                    <form action="#" class="header__search">
+                        <img src="img/svgicons/search.svg" alt="search">
+                        <input type="search" placeholder="Поиск по сайту">
+                    </form>
+                    <button class="header-top__button button-header">
+                        <div class="button-header__img">
+                            <svg width="24" height="24">
+                                <use xlink:href="#location"></use>
+                            </svg>
+                        </div>
+                        <p class="button-header__text searchingBtn">Ивановская область</p>
+                    </button>
+                    <div class="header-bottom__catalog">
+                        <span>
+
+                        </span>
+                        Каталог
+                    </div>
+                    <a href="#">
+                        <li class="nav-header__item header__link">
+                            <svg width="24" height="24">
+                                <use xlink:href="#mail"></use>
+                            </svg>
+                            <p>info@curs-sale.ru</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-header__item header__link">
+                            <svg width="24" height="24">
+                                <use xlink:href="#call"></use>
+                            </svg>
+                            <p>8 (800) 550-49-08</p>
+                        </li>
+                    </a>
+                    <button>
+                        <li class="nav-header__item header__link">
+                            <svg width="24" height="24">
+                                <use xlink:href="#time"></use>
+                            </svg>
+                            <p class="underline">Режим работы</p>
+                        </li>
+                    </button>
+                    <div class="header-bottom__callback btn">
+                        Заказать обратный звонок
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+        <main class="content">
+            <div class="crumbs">
+                <div class="crumbs__content">
+                    <div class="crumbs__row">
+                        <a href="index.html">Главная</a>
+                        <span>/</span>
+                        <a href="catalog.html">Каталог</a>
+                        <span>/</span>
+                        <p class="text-colored">Охрана труда</p>
+                    </div>
+                    <a href="catalog.html" class="crumbs__back text-colored">
+                        <img src="img/svgicons/left-arrow.svg" width="24px" height="24px" alt="">
+                        Назад
+                    </a>
+                </div>
+            </div>
+            <section class="courses">
+                <div class="courses__row">
+                    <h1 class="title courses__title">Готовые курсы по направлению: <span>Охрана труда (15 курсов)</span></h1>
+                    <div class="courses__inner">
+                        <aside class="courses__aside aside-courses block-with-shadow">
+                            <form action="#" class="aside-courses__form">
+                                <div>
+                                    <p class="aside-courses__title">Тип курса</p>
+                                    <div class="aside-courses__checkboxes">
+                                        <label class="aside-courses__checkbox">
+                                            <input type="checkbox" name="" id="">
+                                            <p>Краткосрочный</p>
+                                        </label>
+                                        <label class="aside-courses__checkbox">
+                                            <input type="checkbox" name="" id="">
+                                            <p>Повышение квалификации</p>
+                                        </label>
+                                        <label class="aside-courses__checkbox">
+                                            <input type="checkbox" name="" id="">
+                                            <p>Профессиональная переподготовка</p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="aside-courses__title">Кол-во часов</p>
+                                    <div class="aside-courses__checkboxes">
+                                        <label class="aside-courses__checkbox">
+                                            <input type="checkbox" name="" id="">
+                                            <p>16 часов</p>
+                                        </label>
+                                        <label class="aside-courses__checkbox">
+                                            <input type="checkbox" name="" id="">
+                                            <p>24 часов</p>
+                                        </label>
+                                        <label class="aside-courses__checkbox">
+                                            <input type="checkbox" name="" id="">
+                                            <p>32 часов</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </aside>
+                        <div class="courses__content">
+                            <div class="courses__sort block-with-shadow">
+                                <p>Сортировка:</p>
+                                <p class="text-colored">по цене</p>
+                                <p class="text-colored">по часам</p>
+                                <p class="text-colored">по типу курса</p>
+                            </div>
+                            <div class="courses__arcticles">
+                                <article class="courses__article article-courses block-with-shadow">
+                                    <div class="article-courses__top">
+                                        <div class="article-courses__img">
+                                            <picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.png" alt=""></picture>
+                                        </div>
+                                        <p class="article-courses__name">Изменения трудового законодательства в области охраны труда с 01.03.2022 года (внеочередная проверка знаний)</p>
+                                        <p class="article-courses__type">Повышение квалификации</p>
+                                        <div class="article-courses__tags">
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/time-purple.svg" alt="">
+                                                <p>ОТ_00</p>
+                                            </div>
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/tag-purple.svg" alt="">
+                                                <p>16 часов</p>
+                                            </div>
+                                        </div>
+                                        <div class="article-courses__sale tag__sale">Скидка до 31.01.2023</div>
+                                    </div>
+                                    <div class="article-courses__bottom">
+                                        <div class="article-courses__prices">
+                                            <p class="new-price">10 990₽</p>
+                                            <div class="old-price">25 000₽</div>
+                                        </div>
+                                        <a class="article-courses__purchase btn">
+                                            <svg width="24" height="24">
+                                                <use xlink:href="#cart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </article>
+                                <article class="courses__article article-courses block-with-shadow">
+                                    <div class="article-courses__top">
+                                        <div class="article-courses__img">
+                                            <picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.png" alt=""></picture>
+                                        </div>
+                                        <p class="article-courses__name">Изменения трудового законодательства в области охраны труда с 01.03.2022 года (внеочередная проверка знаний)</p>
+                                        <p class="article-courses__type">Повышение квалификации</p>
+                                        <div class="article-courses__tags">
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/time-purple.svg" alt="">
+                                                <p>ОТ_00</p>
+                                            </div>
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/tag-purple.svg" alt="">
+                                                <p>16 часов</p>
+                                            </div>
+                                        </div>
+                                        <div class="article-courses__sale tag__sale">Скидка до 31.01.2023</div>
+                                    </div>
+                                    <div class="article-courses__bottom">
+                                        <div class="article-courses__prices">
+                                            <p class="new-price">10 990₽</p>
+                                            <div class="old-price">25 000₽</div>
+                                        </div>
+                                        <a class="article-courses__purchase btn">
+                                            <svg width="24" height="24">
+                                                <use xlink:href="#cart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </article>
+                                <article class="courses__article article-courses block-with-shadow">
+                                    <div class="article-courses__top">
+                                        <div class="article-courses__img">
+                                            <picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.png" alt=""></picture>
+                                        </div>
+                                        <p class="article-courses__name">Изменения трудового законодательства в области охраны труда с 01.03.2022 года (внеочередная проверка знаний)</p>
+                                        <p class="article-courses__type">Повышение квалификации</p>
+                                        <div class="article-courses__tags">
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/time-purple.svg" alt="">
+                                                <p>ОТ_00</p>
+                                            </div>
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/tag-purple.svg" alt="">
+                                                <p>16 часов</p>
+                                            </div>
+                                        </div>
+                                        <div class="article-courses__sale tag__sale">Скидка до 31.01.2023</div>
+                                    </div>
+                                    <div class="article-courses__bottom">
+                                        <div class="article-courses__prices">
+                                            <p class="new-price">10 990₽</p>
+                                            <div class="old-price">25 000₽</div>
+                                        </div>
+                                        <a class="article-courses__purchase btn">
+                                            <svg width="24" height="24">
+                                                <use xlink:href="#cart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </article>
+                                <article class="courses__article article-courses block-with-shadow">
+                                    <div class="article-courses__top">
+                                        <div class="article-courses__img">
+                                            <picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.png" alt=""></picture>
+                                        </div>
+                                        <p class="article-courses__name">Изменения трудового законодательства в области охраны труда с 01.03.2022 года (внеочередная проверка знаний)</p>
+                                        <p class="article-courses__type">Повышение квалификации</p>
+                                        <div class="article-courses__tags">
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/time-purple.svg" alt="">
+                                                <p>ОТ_00</p>
+                                            </div>
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/tag-purple.svg" alt="">
+                                                <p>16 часов</p>
+                                            </div>
+                                        </div>
+                                        <div class="article-courses__sale tag__sale">Скидка до 31.01.2023</div>
+                                    </div>
+                                    <div class="article-courses__bottom">
+                                        <div class="article-courses__prices">
+                                            <p class="new-price">10 990₽</p>
+                                            <div class="old-price">25 000₽</div>
+                                        </div>
+                                        <a class="article-courses__purchase btn">
+                                            <svg width="24" height="24">
+                                                <use xlink:href="#cart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </article>
+                                <article class="courses__article article-courses block-with-shadow">
+                                    <div class="article-courses__top">
+                                        <div class="article-courses__img">
+                                            <picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.png" alt=""></picture>
+                                        </div>
+                                        <p class="article-courses__name">Изменения трудового законодательства в области охраны труда с 01.03.2022 года (внеочередная проверка знаний)</p>
+                                        <p class="article-courses__type">Повышение квалификации</p>
+                                        <div class="article-courses__tags">
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/time-purple.svg" alt="">
+                                                <p>ОТ_00</p>
+                                            </div>
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/tag-purple.svg" alt="">
+                                                <p>16 часов</p>
+                                            </div>
+                                        </div>
+                                        <div class="article-courses__sale tag__sale">Скидка до 31.01.2023</div>
+                                    </div>
+                                    <div class="article-courses__bottom">
+                                        <div class="article-courses__prices">
+                                            <p class="new-price">10 990₽</p>
+                                            <div class="old-price">25 000₽</div>
+                                        </div>
+                                        <a class="article-courses__purchase btn">
+                                            <svg width="24" height="24">
+                                                <use xlink:href="#cart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </article>
+                                <article class="courses__article article-courses block-with-shadow">
+                                    <div class="article-courses__top">
+                                        <div class="article-courses__img">
+                                            <picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.png" alt=""></picture>
+                                        </div>
+                                        <p class="article-courses__name">Изменения трудового законодательства в области охраны труда с 01.03.2022 года (внеочередная проверка знаний)</p>
+                                        <p class="article-courses__type">Повышение квалификации</p>
+                                        <div class="article-courses__tags">
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/time-purple.svg" alt="">
+                                                <p>ОТ_00</p>
+                                            </div>
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/tag-purple.svg" alt="">
+                                                <p>16 часов</p>
+                                            </div>
+                                        </div>
+                                        <div class="article-courses__sale tag__sale">Скидка до 31.01.2023</div>
+                                    </div>
+                                    <div class="article-courses__bottom">
+                                        <div class="article-courses__prices">
+                                            <p class="new-price">10 990₽</p>
+                                            <div class="old-price">25 000₽</div>
+                                        </div>
+                                        <a class="article-courses__purchase btn">
+                                            <svg width="24" height="24">
+                                                <use xlink:href="#cart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </article>
+                                <article class="courses__article article-courses block-with-shadow">
+                                    <div class="article-courses__top">
+                                        <div class="article-courses__img">
+                                            <picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.png" alt=""></picture>
+                                        </div>
+                                        <p class="article-courses__name">Изменения трудового законодательства в области охраны труда с 01.03.2022 года (внеочередная проверка знаний)</p>
+                                        <p class="article-courses__type">Повышение квалификации</p>
+                                        <div class="article-courses__tags">
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/time-purple.svg" alt="">
+                                                <p>ОТ_00</p>
+                                            </div>
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/tag-purple.svg" alt="">
+                                                <p>16 часов</p>
+                                            </div>
+                                        </div>
+                                        <div class="article-courses__sale tag__sale">Скидка до 31.01.2023</div>
+                                    </div>
+                                    <div class="article-courses__bottom">
+                                        <div class="article-courses__prices">
+                                            <p class="new-price">10 990₽</p>
+                                            <div class="old-price">25 000₽</div>
+                                        </div>
+                                        <a class="article-courses__purchase btn">
+                                            <svg width="24" height="24">
+                                                <use xlink:href="#cart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </article>
+                                <article class="courses__article article-courses block-with-shadow">
+                                    <div class="article-courses__top">
+                                        <div class="article-courses__img">
+                                            <picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.png" alt=""></picture>
+                                        </div>
+                                        <p class="article-courses__name">Изменения трудового законодательства в области охраны труда с 01.03.2022 года (внеочередная проверка знаний)</p>
+                                        <p class="article-courses__type">Повышение квалификации</p>
+                                        <div class="article-courses__tags">
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/time-purple.svg" alt="">
+                                                <p>ОТ_00</p>
+                                            </div>
+                                            <div class="article-courses__tag">
+                                                <img src="img/svgicons/tag-purple.svg" alt="">
+                                                <p>16 часов</p>
+                                            </div>
+                                        </div>
+                                        <div class="article-courses__sale tag__sale">Скидка до 31.01.2023</div>
+                                    </div>
+                                    <div class="article-courses__bottom">
+                                        <div class="article-courses__prices">
+                                            <p class="new-price">10 990₽</p>
+                                            <div class="old-price">25 000₽</div>
+                                        </div>
+                                        <a class="article-courses__purchase btn">
+                                            <svg width="24" height="24">
+                                                <use xlink:href="#cart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="courses__nav nav-courses block-with-shadow">
+                                <div class="nav-courses__arrows">
+                                    <a href="#">
+                                        <img src="img/svgicons/chevrons-left.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svgicons/chevron-left.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="nav-courses__nums">
+                                    <a class="nav-courses__links" href="#"></a>
+                                    <a class="nav-courses__links active" href="#">1</a>
+                                    <a class="nav-courses__links" href="#">2</a>
+                                </div>
+                                <div class="nav-courses__arrows">
+                                    <a href="#">
+                                        <img src="img/svgicons/chevron-right.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svgicons/chevrons-right.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="search block-with-shadow">
+            <div class="block-close" id="close">
+                <img src="img/svgicons/close.svg" alt="">
+            </div>
+            <h3 class="search__title">Выберите ваш регион</h3>
+            <input class="search__input input" type="search" name="search" id="searchRegion" placeholder="Найти регион">
+            <div class="search__row">
+                <div class="search__items">
+                    <div class="search__item item-search">
+                        <p class="item-search__title">A</p>
+                        <p class="item-search__region">Алтайский край</p>
+                        <p class="item-search__region">Амурская область</p>
+                        <p class="item-search__region">Астраханская область</p>
+                    </div>
+                    <div class="search__item item-search">
+                        <p class="item-search__title">A</p>
+                        <p class="item-search__region">Алтайский край</p>
+                        <p class="item-search__region">Амурская область</p>
+                        <p class="item-search__region">Астраханская область</p>
+                    </div>
+                    <div class="search__item item-search">
+                        <p class="item-search__title">A</p>
+                        <p class="item-search__region">Алтайский край</p>
+                        <p class="item-search__region">Амурская область</p>
+                        <p class="item-search__region">Астраханская область</p>
+                    </div>
+                    <div class="search__item item-search">
+                        <p class="item-search__title">A</p>
+                        <p class="item-search__region">Алтайский край</p>
+                        <p class="item-search__region">Амурская область</p>
+                        <p class="item-search__region">Астраханская область</p>
+                    </div>
+                </div>
+                <div class="search__items">
+                    <div class="search__item item-search">
+                        <p class="item-search__title">A</p>
+                        <p class="item-search__region">Алтайский край</p>
+                        <p class="item-search__region">Амурская область</p>
+                        <p class="item-search__region">Астраханская область</p>
+                    </div>
+                    <div class="search__item item-search">
+                        <p class="item-search__title">A</p>
+                        <p class="item-search__region active">Алтайский край</p>
+                        <p class="item-search__region">Амурская область</p>
+                        <p class="item-search__region">Астраханская область</p>
+                    </div>
+                    <div class="search__item item-search">
+                        <p class="item-search__title">A</p>
+                        <p class="item-search__region">Алтайский край</p>
+                        <p class="item-search__region">Амурская область</p>
+                        <p class="item-search__region">Астраханская область</p>
+                    </div>
+                    <div class="search__item item-search">
+                        <p class="item-search__title">A</p>
+                        <p class="item-search__region">Алтайский край</p>
+                        <p class="item-search__region">Амурская область</p>
+                        <p class="item-search__region">Астраханская область</p>
+                    </div>
+                    <div class="search__item item-search">
+                        <p class="item-search__title">A</p>
+                        <p class="item-search__region">Алтайский край</p>
+                        <p class="item-search__region">Амурская область</p>
+                        <p class="item-search__region">Астраханская область</p>
+                    </div>
+                    <div class="search__item item-search">
+                        <p class="item-search__title">A</p>
+                        <p class="item-search__region">Алтайский край</p>
+                        <p class="item-search__region">Амурская область</p>
+                        <p class="item-search__region">Астраханская область</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="sign-in block-with-shadow">
+            <div class="block-close" id="close">
+                <img src="img/svgicons/close.svg" alt="">
+            </div>
+            <h3 class="sign-in__title">Вход в личный кабинет</h3>
+            <div class="sign-in__row">
+                <form action="#">
+                    <input type="email" class="sign-in__input input" placeholder="example@mail.ru">
+                    <input type="password" class="sign-in__input input" placeholder="Пароль">
+                    <button type="submit" class="sign-in__btn btn">Войти</button>
+                </form>
+                <div class="sign-in__links">
+                    <a class="sign-in__link" href="#">Забыли пароль?</a>
+                    <a class="sign-in__link" href="#">Регистрация</a>
+                </div>
+            </div>
+        </div>
+        
+<footer class="footer footer__pc">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__left">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <img width="" src="img/svgicons/logo.svg" alt="logo">
+                    </div>
+                    <p class="footer__text">
+                        2022 © «Готовые курсы» — комплекты учебных материалов для системы дистанционного обучения вашего
+                        учебного центра
+                    </p>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__nav">
+                    <h6 class="footer__title block__title">Меню</h6>
+                    <ul class="block__text">
+                        <a href="#" class="footer__link">
+                            <li>Каталог</li>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <li>Способы оплаты</li>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <li>Контакты и реквизиты</li>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <li>Личный кабинет</li>
+                        </a>
+                    </ul>
+                </div>
+                <nav class="footer__contacts">
+                    <h6 class="footer__title block__title">Контакты</h6>
+                    <div class="block__text">
+                        <p class="footer__text">Тел: 8 (800) 550-49-08</p>
+                        <p class="footer__text">E-mail: info@curs-sale.ru</p>
+                        <p class="footer__text">График работы: пн-пт 8:00 - 17:00 сб, вс - выходной</p>
+                    </div>
+                </nav>
+                <div class="footer__info">
+                    <h6 class="footer__title block__title">Доп информация</h6>
+                    <div class="block__text">
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        <a href="#" class="footer__link">Договор-оферта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer footer__mobile">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__link">
+                <svg width="24" height="24">
+                    <use xlink:href="#wallet"></use>
+                </svg>
+                <p>Оплата</p>
+            </div>
+            <div class="footer__link">
+                <svg width="24" height="24">
+                    <use xlink:href="#papper"></use>
+                </svg>
+                <p>Контакты</p>
+            </div>
+            <div class="footer__link">
+                <svg width="24" height="24">
+                    <use xlink:href="#cart"></use>
+                </svg>
+                <p>Корзина</p>
+            </div>
+            <div class="footer__link">
+                <svg width="24" height="24">
+                    <use xlink:href="#profile"></use>
+                </svg>
+                <p>Кабинет</p>
+            </div>
+    
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230118201226"></script>
+    <script src="https://kit.fontawesome.com/cdd40c5823.js?_v=20230118201226" crossorigin="anonymous"></script>
+    <script src="js/app.min.js?_v=20230118201226"></script>
+</body>
+
+</html>
