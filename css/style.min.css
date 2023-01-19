@@ -1469,10 +1469,38 @@ h6 {
   vertical-align: middle;
   border: 1px solid #D2D2D4;
 }
+.tabs-education__table th {
+  background: #DFDFDF;
+  font-weight: 500;
+  white-space: pre-wrap;
+  padding: 15px 5px;
+  line-height: 13px;
+  vertical-align: middle;
+  border: 1px solid #D2D2D4;
+}
 .tabs-education__table tr {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
+}
+.tabs-education__table tr td, .tabs-education__table tr th {
+  line-height: 1.2;
+}
+.tabs-education__table tr td:nth-child(1) {
+  width: 115px;
+}
+.tabs-education__table tr td:nth-child(2) {
+  width: 831px;
+  text-align: left;
+}
+.tabs-education__table tr td:nth-child(3) {
+  width: 85px;
+}
+.tabs-education__table tr td:nth-child(4) {
+  width: 144px;
+}
+.tabs-education__table tr td:nth-child(5) {
+  width: 144px;
 }
 .tabs-education p {
   font-weight: 400;
@@ -2736,6 +2764,10 @@ body::-webkit-scrollbar-thumb {
   }
   .intro-cart-item__row {
     flex-direction: column;
+  }
+  .tabs-education__table td, .tabs-education__table th {
+    width: 100% !important;
+    text-align: right !important;
   }
 }
 @media only screen and (max-width: 768px) {
