@@ -600,12 +600,24 @@ h6 {
   stroke: #4007E1;
 }
 
+.catalog__mobile {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  opacity: 0;
+  padding: 30px;
+}
+
 .deponing.popup-active, .search.popup-active,
 .sign-in.popup-active, .timeBlock.popup-active,
 .callback.popup-active, .thanks-ordering.popup-active,
 .catalog.popup-active {
   display: block;
   z-index: 4;
+  overflow: hidden;
 }
 
 .catalog.popup-active {
@@ -2703,7 +2715,7 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     -webkit-box-shadow: 0 4px 50px rgba(47, 30, 24, 0.1);
     box-shadow: 0 4px 50px rgba(47, 30, 24, 0.1);
-    z-index: 10000;
+    z-index: 3;
     padding: 20px 0px;
   }
   .header__body {
@@ -2834,6 +2846,23 @@ body::-webkit-scrollbar-thumb {
   .tabs-education__table td, .tabs-education__table th {
     width: 100% !important;
     text-align: right !important;
+  }
+  .catalog__mobile {
+    max-height: 400px;
+    overflow: hidden;
+    width: 100%;
+    max-width: none;
+  }
+  .catalog__mobile .catalog__row {
+    max-height: 300px;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  .catalog__mobile.popup-active {
+    display: block;
+    z-index: 4;
+    overflow: hidden;
+    opacity: 1;
   }
 }
 @media only screen and (max-width: 768px) {
