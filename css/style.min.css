@@ -53,6 +53,8 @@ input::-ms-clear {
   display: none;
 }
 
+
+
 button {
   cursor: pointer;
 }
@@ -103,6 +105,10 @@ h6 {
   src: url("../fonts/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+}
+
+body.no-scrooll, html.no-scrooll {    
+    overflow: hidden;
 }
 .header {
   padding: 10px 0px 0px;
