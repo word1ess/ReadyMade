@@ -617,6 +617,13 @@ body.no-scrooll, html.no-scrooll {
   padding: 30px;
 }
 
+.deponing, .search,
+.sign-in, .timeBlock,
+.callback, .thanks-ordering,
+.catalog {
+  z-index: 2;
+}
+
 .deponing.popup-active, .search.popup-active,
 .sign-in.popup-active, .timeBlock.popup-active,
 .callback.popup-active, .thanks-ordering.popup-active,
